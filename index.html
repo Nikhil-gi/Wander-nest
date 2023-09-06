@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel-site</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      const menuB = document.getElementsByClassName(".menu-btn");
+      const mid = document.getElementsByClassName("mid");
+
+      menuB.addEventListener("click", () => {
+        menuB.classList.toggle("active");
+      });
+
+      menuB.addEventListener("click", () => {
+        mid.classList.toggle("active");
+      });
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <!-- left box logo-->
+      <div class="left"><a href="index.html"></a>Travel<span>Site</span></div>
+      <!--box for navbar -->
+      <div class="menu-btn"></div>
+      <div class="mid">
+        <div class="navbar">
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#about">About Us</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+      <video class="bg-video" src="vid/bg1.mp4" autoplay muted loop></video>
+      <div class="content">
+        <h1>
+          EXPLORE THE MOST BEAUTIFUL PLACES <br />
+          <span>AROUND THE WORLD</span>
+        </h1>
+        <p>
+          Plan and book your perfect trip with expert advise travel
+          tips,destination information and inspiration from us. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Assumenda, dolore,
+          aspernatur itaque perferendis esse.
+        </p>
+        <div class="banner-text-item">
+          <div class="banner-heading">
+            <h1>Find your Next tour!</h1>
+          </div>
+          <form class="form">
+            <input
+              type="text"
+              list="mylist"
+              placeholder="Where would you like to go?"
+            />
+            <datalist id="mylist">
+              <option>London</option>
+              <option>Canada</option>
+              <option>Monaco</option>
+              <option>France</option>
+              <option>Japan</option>
+              <option>Switzerland</option>
+              <option>Seoul</option>
+            </datalist>
+            <input type="date" class="date" />
+            <a href="#" class="book">book</a>
+          </form>
+        </div>
+      </div>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/nikhil-p-0b0bb3224/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://instagram.com/nikhill.ig_/"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/Nikhilpndt"><i class="fab fa-twitter"></i></a>
+      </div>
+    </section>
+    <!--==============Places===================-->
+    <div class="places">
+      <div class="places-text">
+        <h2>Most Loved Places</h2>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="zoom-img">
+            <div class="img-card">
+              <img src="img/s.jpg" />
+            </div>
+          </div>
+          <div class="text">
+            <span class="rating">⭐⭐⭐⭐⭐</span>
+            <h2>Trip to Switzerland</h2>
+            <p class="cost">$1870 / Per Person</p>
+            <div class="card-box">
+              <p class="time">🕓 6 Days</p>
+              <p class="location">✈ Bern, Switzerland</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="zoom-img">
+            <div class="img-card">
+              <img src="img/f.jpg" />
+            </div>
+          </div>
+          <div class="text">
+            <span class="rating">⭐⭐⭐⭐⭐</span>
+            <h2>Trip to France</h2>
+            <p class="cost">$1870 / Per Person</p>
+            <div class="card-box">
+              <p class="time">🕓 5 Days</p>
+              <p class="location">✈ Paris, France</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="zoom-img">
+            <div class="img-card">
+              <img
+                src="https://res.cloudinary.com/dxssqb6l8/image/upload/v1605293955/monaco_usu7xb.jpg"
+              />
+            </div>
+          </div>
+          <div class="text">
+            <span class="rating">⭐⭐⭐⭐⭐</span>
+            <h2>Trip to Island City</h2>
+            <p class="cost">$1870 / Per Person</p>
+            <div class="card-box">
+              <p class="time">🕓 6 Days</p>
+              <p class="location">✈ Monaco, Monaco</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="zoom-img">
+            <div class="img-card">
+              <img src="img/c.jpg" />
+            </div>
+          </div>
+          <div class="text">
+            <span class="rating">⭐⭐⭐⭐⭐</span>
+            <h2>Enjoy trip in Capadocia</h2>
+            <p class="cost">$2000 / Per Person</p>
+            <div class="card-box">
+              <p class="time">🕓 4 Days</p>
+              <p class="location">✈ Capadocia, Turkey</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="zoom-img">
+            <div class="img-card">
+              <img src="img/south.jpg" />
+            </div>
+          </div>
+          <div class="text">
+            <span class="rating">⭐⭐⭐⭐⭐</span>
+            <h2>Experience Korean Culture</h2>
+            <p class="cost">$1870 / Per Person</p>
+            <div class="card-box">
+              <p class="time">🕓 5 Days</p>
+              <p class="location">✈ Seoul, South Korea</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="zoom-img">
+            <div class="img-card">
+              <img
+                src="img/tung.jpg"
+              />
+            </div>
+          </div>
+          <div class="text">
+            <span class="rating">⭐⭐⭐⭐</span>
+            <h2>Trek to Tungnath</h2>
+            <p class="cost">$1870 / Per Person</p>
+            <div class="card-box">
+              <p class="time">🕓 3 Days</p>
+              <p class="location">✈ Uttarakhand, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <div class="about-img">
+        <img src="img/t.jpg" />
+      </div>
+      <div class="about-text" id="about">
+        <small>ABOUT OUR COMPANY</small>
+        <h2>We are <i>TravelSite</i>- A trip planner Company</h2>
+        <p>
+          Nurtured from the seed of a single idea ‘to empower the traveller with
+          easy & instant travel bookings providing comprehensive choices’,
+          TravelSite is a pioneer in India’s online travel space. Founded by
+          Nikhil Pandit in the year 2023, TravelSite began its journey by
+          serving the US-India travel market with best-value products &
+          services, powered by robust technology and round-the-clock customer
+          support.
+        </p>
+        <label><input type="checkbox" checked /> 24X7 Customer Support</label>
+        <label><input type="checkbox" checked /> Trekking Tips</label>
+        <label><input type="checkbox" checked /> Free Lunch and Dinner</label>
+        <label><input type="checkbox" checked /> Travel Guide</label>
+        <a href="#">Go to Top &uarr;</a>
+      </div>
+    </div>
+    <!--footer-->
+    <footer>
+      <div class="footer">
+        <div class="row">
+          <a href="https://www.linkedin.com/in/nikhil-p-0b0bb3224/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://instagram.com/nikhill.ig_/"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/Nikhilpndt"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="row">
+          Copyright © 2023 - All rights reserved || Designed By: Nikhil Pandit
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
