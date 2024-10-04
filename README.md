@@ -72,9 +72,9 @@ bash
 
 Copy code
 
-git clone https://github.com/yourusername/WanderNest.git
+git clone https://github.com/yourusername/Wander-nest.git
 
-cd WanderNest
+cd Wander-nest
 
 1. **Open the Project**
 
@@ -111,7 +111,7 @@ Let **WanderNest** be your go-to travel companion for discovering the world.
 
 We’d love to hear from you! If you have questions, ideas, or want to collaborate, feel free to reach out.
 
-🌐 **Visit our website**: WanderNest
+🌐 **Visit our website**: wander-nest.netlify.app
 📧 **Contact us**: Reach out via our website for inquiries and support.
 📱 **Follow us on social media** for the latest updates, travel tips, and deals.
 
