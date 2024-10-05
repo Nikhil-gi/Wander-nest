@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wander Nest Travel Blog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef; /* Light background */
+        }
+
+        header, footer {
+            background: #35424a; /* Same color for header and footer */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .hero h2 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        button {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: block; /* Center button */
+            margin: 20px auto; /* Center button */
+        }
+
+        button:hover {
+            background-color: #ff4949;
+        }
+
+        .blog-posts {
+            padding: 20px;
+            text-align: center; /* Center align the text */
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: center; /* Center the cards */
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            width: 30%; /* Adjust width for three columns */
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3, .card p {
+            text-align: center; /* Center text in cards */
+        }
+
+        .read-more {
+            display: block; /* Center read more button */
+            margin: 10px auto; /* Center read more button */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wander Nest Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="blog-posts">
+            <h2>Latest Posts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="https://media.digitalnomads.world/wp-content/uploads/2021/01/20120709/bali-for-digital-nomads.jpg" alt="Bali" class="card-image">
+                    <h3><a href="bali.html">Exploring the Hidden Gems of Bali</a></h3>
+                    <p>Discover the untouched beauty of Bali beyond the tourist hotspots.</p>
+                    <button class="read-more">Read More</button>
+                </div>
+                <div class="card">
+                    <img src="https://cdn.prod.website-files.com/5ca5fe687e34be0992df1fbe/62ece2ecd2f0de7dc40e9f21_CompressJPEG.Online_100kb_174936.jpg" alt="Solo Travel" class="card-image">
+                    <h3><a href="solo-travel.html">Top 10 Travel Tips for Solo Travelers</a></h3>
+                    <p>Essential tips to ensure a safe and enjoyable journey.</p>
+                    <button class="read-more">Read More</button>
+                </div>
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/YPv_1tCk8P0/maxresdefault.jpg" alt="Street Food" class="card-image">
+                    <h3><a href="street-food.html">Must-Try Street Foods Around the World</a></h3>
+                    <p>A vital part of the travel experience, explore the street foods.</p>
+                    <button class="read-more">Read More</button>
+                </div>
+                <div class="card">
+                    <img src="https://www.zicasso.com/static/e9965f8ecdbab30f9f882eeb67363e08/304cc/e9965f8ecdbab30f9f882eeb67363e08.jpg" alt="Europe" class="card-image">
+                    <h3><a href="europe.html">The Ultimate Guide to Backpacking in Europe</a></h3>
+                    <p>Plan your backpacking adventure across Europe's iconic cities.</p>
+                    <button class="read-more">Read More</button>
+                </div>
+                <div class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1676218968741-8179dd7e533f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3VtbWVyJTIwbW91bnRhaW5zfGVufDB8fDB8fHww" alt="Mountains" class="card-image">
+                    <h3><a href="mountains.html">Top 5 Breathtaking Mountain Destinations</a></h3>
+                    <p>Explore stunning mountain ranges and their hidden treasures.</p>
+                    <button class="read-more">Read More</button>
+                </div>
+                <div class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1669748157617-a3a83cc8ea23?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3VuJTIwYmVhY2h8ZW58MHx8MHx8fDA%3D" alt="Beach" class="card-image">
+                    <h3><a href="beach.html">Relaxing Beaches You Must Visit</a></h3>
+                    <p>Find your perfect spot for sun, sand, and relaxation.</p>
+                    <button class="read-more">Read More</button>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/ejgcq0acumqaosd7kl26" alt="Adventure" class="card-image">
+                    <h3><a href="adventure.html">Adventure Activities for Thrill Seekers</a></h3>
+                    <p>Get your adrenaline pumping with these thrilling activities.</p>
+                    <button class="read-more">Read More</button>
+                </div>
+                <div class="card">
+                    <img src="https://366e203a.rocketcdn.me/wp-content/uploads/2021/01/Italy.jpg" alt="Culture" class="card-image">
+                    <h3><a href="culture.html">Cultural Experiences to Explore Around the World</a></h3>
+                    <p>Immerse yourself in diverse cultures and traditions.</p>
+                    <button class="read-more">Read More</button>
+                </div>
+                <div class="card">
+                    <img src="https://webunwto.s3.eu-west-1.amazonaws.com/inline-images/animals.jpg" alt="Wildlife" class="card-image">
+                    <h3><a href="wildlife.html">Top Wildlife Safaris for Nature Lovers</a></h3>
+                    <p>Experience the beauty of wildlife up close and personal.</p>
+                    <button class="read-more">Read More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Wander Nest. All rights reserved.</p>
+    </footer>
+    </script>
+</body>
+</html>
