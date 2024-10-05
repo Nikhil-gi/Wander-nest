@@ -13,7 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 200px;
+  padding: 15px 100px; /* Reduced padding for responsiveness */
   transition: 0.5s ease;
   font-size: 24px;
   font-family: "Balsamiq Sans";
@@ -43,7 +43,7 @@ header .mid .navbar a {
   font-size: 1em;
   font-weight: 500;
   text-decoration: none;
-  margin-left: 50px;
+  margin-left: 30px; /* Reduced margin */
   transition: 0.3s ease;
 }
 
@@ -61,18 +61,24 @@ header .mid .navbar a:before {
 header .mid .navbar a:hover:before {
   width: 100%;
 }
+
+/* Section styles */
 section {
   padding-top: 50px;
   padding-bottom: 100px;
-  padding-left: 500px;
+  padding-left: 100px; /* Reduced padding */
+  padding-right: 100px; /* Add right padding for better alignment */
 }
+
 .home {
   position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
+  text-align: center;
   font-family: "Lilita One", cursive;
 }
 
@@ -80,45 +86,46 @@ section {
   z-index: 888;
   color: #ffffff;
   width: 70%;
-  margin-top: 50px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
 }
 
 .home .content h1 {
-  font-size: 50px;
+  font-size: 48px;
   justify-content: center;
   letter-spacing: 3px;
   margin-bottom: 30px;
   font-weight: 500;
-  text-align: center;
 }
 
 .home .content h1 span {
   font-size: 1.5em;
   font-weight: 100;
   color: rgb(255, 94, 0);
-  text-align: center;
 }
 
 .home .content p {
   margin-bottom: 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 28px;
-  text-align: center;
-  font-size: 22px;;
+  font-size: 22px;
 }
 
+/* Social media icon adjustments */
 .home .social {
   z-index: 888;
   position: absolute;
   right: 30px;
-  transition: 0.5s ease;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
 }
 
 .home .social a {
   color: white;
-  font-size: 3em;
+  font-size: 2.5em; /* Reduced size for better fit */
   margin-bottom: 24px;
   transition: 0.3s ease;
 }
@@ -139,34 +146,35 @@ section {
   object-fit: cover;
 }
 
+/* Form and banner styling */
 .banner-text-item {
-  margin: 30px 200px;
-  position: absolute;
-  text-align: center;
   display: flex;
-  flex-flow: column;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  line-height: 20px;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .banner-heading h1 {
-  font-size: 90px;
+  font-size: 64px; /* Slightly reduced font-size */
   font-weight: normal;
   color: white;
   font-family: "Balsamiq Sans";
 }
+
 .banner-text-item .form {
-  flex: 1;
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
-  width: 130%;
+  width: 100%;
   padding: 1% 2%;
 }
+
 .banner-text-item input,
 .banner-text-item .date,
 .banner-text-item .book {
@@ -177,19 +185,24 @@ section {
   border-radius: 5px;
   outline: 0;
   border: none;
+  width: auto;
 }
+
 .banner-text-item input {
-  width: 50%;
   flex: 2;
+  min-width: 200px;
 }
+
 .banner-text-item .date {
-  width: 20%;
   flex: 1;
+  min-width: 150px;
 }
+
 .banner-text-item .book {
-  width: 20%;
   flex: 1;
+  min-width: 150px;
 }
+
 .banner-text-item .book {
   text-decoration: none;
   color: #000;
@@ -198,15 +211,15 @@ section {
   cursor: pointer;
   background-color: rgb(255, 94, 0);
   font-size: 16px;
-  font-weight: normal;
   font-family: "Barlow Condensed";
-  width: 20%;
 }
 
-.banner-text-item .book:hover{
-  background-color:rgb(250, 250, 0);
-  color:black;
+.banner-text-item .book:hover {
+  background-color: rgb(250, 250, 0);
+  color: black;
 }
+
+/* Places section */
 .places {
   padding-top: 50px;
   background-color: black;
@@ -224,40 +237,36 @@ section {
   color: #fdfdfd;
   letter-spacing: 1px;
 }
+
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 30px;
-  align-items: center;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 20px;
   text-align: center;
+  padding: 0 20px;
 }
+
 .card {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
   width: 80%;
-  height: auto;
 }
+
 .card img {
   max-width: 100%;
   height: 300px;
   border-radius: 8px;
   cursor: pointer;
 }
+
 .cards .text {
   padding: 20px;
   font-family: "Lucida Sans";
   line-height: 50px;
+  color: #ffffff;
 }
 
-.cards .text {
-  color: #ffffff;
-  font-family: Cambria;
-}
 .cards .card-box {
   display: flex;
-  flex-flow: row;
   background-color: rgb(231, 106, 34);
   font-size: 18px;
   font-family: Roboto;
@@ -266,71 +275,85 @@ section {
   text-align: center;
   border-radius: 8px;
 }
+
 .cards .time {
   flex: 1;
 }
+
 .cards .location {
   flex: 2;
 }
+
 .cards .cost {
   color: #4cafad;
   font-size: 20px;
 }
 
+/* Image zoom effect */
 .zoom-img {
-  float: left;
   position: relative;
   width: 100%;
   height: 320px;
   overflow: hidden;
 }
+
 .zoom-img .img-card {
   position: absolute;
-  overflow: hidden;
 }
+
 .img-card img {
-  -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
 }
+
 .card:hover .zoom-img img {
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
+/* About section */
 .about {
   display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 150px;
-  background-color: black;
+flex-flow: row wrap;
+align-items: center;
+justify-content: center;
+padding: 50px 20px;
+background-color: black;
+flex-direction: column;
 }
+
 .about-img {
   flex: 1;
 }
+
 .about-img img {
   width: 500px;
   height: 700px;
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
   border-radius: 50px;
 }
+
 .about-text {
   flex: 1;
   display: flex;
   flex-flow: column wrap;
 }
 
-.about-text small {
-  color: rgb(231, 106, 34);
-  font-size: 30px;
-}
 .about-text h2 {
-  flex: 1;
   font-family: Barlow Condensed;
   font-size: 60px;
   color: #ffffff;
   width: 700px;
 }
+
+.about-text p {
+  width: 100%;
+  line-height: 30px;
+  color: #ffffff;
+  padding: 50px 0;
+  font-family: "Balsamiq Sans";
+  font-size: 22px;
+  letter-spacing: 1.2px;
+}
+
 .about-text label {
   padding-bottom: 10px;
   color: #ffffff;
@@ -338,15 +361,7 @@ section {
   letter-spacing: 1.2px;
   font-size: 18px;
 }
-.about-text p {
-  width: 900px;
-  line-height: 30px;
-  color: #ffffff;
-  padding: 50px 0;
-  font-family: "Balsamiq Sans";
-  letter-spacing: 1.2px;
-  font-size: 22px;
-}
+
 .about-text a {
   background-color: #f45505;
   border: 2px solid black;
@@ -365,9 +380,10 @@ section {
   color: #000000;
 }
 
+/* Footer section */
 .footer {
   background: #000;
-  padding: 30px 0px;
+  padding: 30px 0;
   font-family: "Play", sans-serif;
   text-align: center;
 }
@@ -383,11 +399,16 @@ section {
 .footer .row a {
   text-decoration: none;
   color: gray;
-  transition: 0.5s;
+  transition: 0.4s ease;
 }
 
 .footer .row a:hover {
   color: #fff;
+}
+
+.footer .row p {
+  color: gray;
+  font-size: 1rem;
 }
 
 .footer .row ul {
@@ -402,83 +423,4 @@ section {
 .footer .row a i {
   font-size: 1.3em;
   margin: 0% 1%;
-}
-
-@media (max-width: 1170px) {
-  header {
-    padding: 15px 24px;
-  }
-
-  section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 20px;
-  }
-
-  .home .social {
-    right: 15px;
-  }
-
-  .home .social a {
-    font-size: 1.6em;
-  }
-
-  header .mid .navbar a {
-    color: rgb(255, 255, 255);
-    font-size: 1.3em;
-    margin: 20px;
-  }
-
-  header .mid .navbar a:before {
-    background: rgb(255, 94, 0);
-    height: 5px;
-  }
-
-  header .mid .active .navbar {
-    background: rgb(97, 96, 96);
-    width: 600px;
-    max-width: 600px;
-    margin: 20px;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
-  }
-
-  header .mid {
-    display: none;
-  }
-
-  header .mid .active {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgb(1, 1, 1, 0.5);
-  }
-
-  header .menu-btn {
-    background: url(img/m3.png) no-repeat;
-    background-size: 30px;
-    background-position: center;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: 0.3s ease;
-  }
-
-  header .menu-btn .active {
-    z-index: 999;
-    background: url(img/close.png) no-repeat;
-    background-size: 25px;
-    background-position: center;
-    transition: 0.3s ease;
-    cursor: pointer;
-  }
 }

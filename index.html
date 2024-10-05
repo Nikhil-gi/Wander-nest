@@ -24,16 +24,13 @@
       rel="stylesheet"
     />
     <script>
-      const menuB = document.getElementsByClassName(".menu-btn");
-      const mid = document.getElementsByClassName("mid");
+      const menuB = document.querySelector(".menu-btn");
+  const mid = document.querySelector(".mid");
 
-      menuB.addEventListener("click", () => {
-        menuB.classList.toggle("active");
-      });
-
-      menuB.addEventListener("click", () => {
-        mid.classList.toggle("active");
-      });
+  menuB.addEventListener("click", () => {
+    menuB.classList.toggle("active");
+    mid.classList.toggle("active");
+  });
     </script>
   </head>
 
