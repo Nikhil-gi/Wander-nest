@@ -309,6 +309,10 @@ section {
   flex: 1;
 }
 .about-img img {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex:1;
   width: 500px;
   height: 700px;
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
