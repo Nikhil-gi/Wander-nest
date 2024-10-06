@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wander Nest Travel Blog</title>
+    <link rel="stylesheet" href="style.css"> <!-- Assuming your main style.css is linked -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Balsamiq Sans', sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 200px;
+            font-size: 1.2em;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        header .left {
+            font-size: 2em;
+            font-weight: bold;
+            cursor: pointer;
+            color: white;
+        }
+
+        header .left span {
+            color: rgb(255, 94, 0);
+        }
+
+        header nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        header nav ul li {
+            margin-left: 50px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+        }
+
+        header nav ul li a:hover::before {
+            width: 100%;
+        }
+
+        header nav ul li a::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: rgb(255, 94, 0);
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-family: 'Lilita One', sans-serif;
+            font-size: 3.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            font-family: 'Balsamiq Sans';
+        }
+
+        /* Blog Section */
+        .blog-posts {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .blog-posts h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #fff;
+            font-family: 'Lilita One', sans-serif;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 30px;
+            justify-items: center;
+        }
+
+        .card {
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            width: 100%; /* Make cards responsive */
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover .card-image {
+            transform: scale(1.1);
+        }
+
+        .card h3 {
+            font-size: 1.8em;
+            margin: 20px 0;
+            color: #fdfdfd;
+        }
+
+        .card p {
+            font-size: 1.2em;
+            color: #ddd;
+            margin-bottom: 20px;
+            padding: 0 10px;
+        }
+
+        /* Button Styles */
+        .read-more {
+            background-color: rgb(255, 94, 0);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-family: 'Balsamiq Sans';
+        }
+
+        .read-more:hover {
+            background-color: rgb(250, 250, 0);
+            color: #000;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            font-family: 'Balsamiq Sans';
+        }
+
+        footer .social a {
+            color: #fff;
+            font-size: 2em;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        footer .social a:hover {
+            color: rgb(255, 94, 0);
+        }
+
+        footer p {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="left"><a href="index.html">Travel<span>Site</span></a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Wander Nest Blog</h2>
+        <p>Your guide to travel tips, destinations, and more</p>
+    </section>
+
+    <!-- Blog Posts (3x3 Grid) -->
+    <section class="blog-posts">
+        <h2>Latest Posts</h2>
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://media.digitalnomads.world/wp-content/uploads/2021/01/20120709/bali-for-digital-nomads.jpg" alt="Bali" class="card-image">
+                <h3><a href="bali.html">Exploring the Hidden Gems of Bali</a></h3>
+                <p>Discover the untouched beauty of Bali beyond the tourist hotspots.</p>
+                <button class="read-more">Read More</button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://cdn.prod.website-files.com/5ca5fe687e34be0992df1fbe/62ece2ecd2f0de7dc40e9f21_CompressJPEG.Online_100kb_174936.jpg" alt="Solo Travel" class="card-image">
+                <h3><a href="solo-travel.html">Top 10 Travel Tips for Solo Travelers</a></h3>
+                <p>Essential tips to ensure a safe and enjoyable journey.</p>
+                <button class="read-more">Read More</button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://i.ytimg.com/vi/YPv_1tCk8P0/maxresdefault.jpg" alt="Street Food" class="card-image">
+                <h3><a href="street-food.html">Must-Try Street Foods Around the World</a></h3>
+                <p>A vital part of the travel experience, explore the street foods.</p>
+                <button class="read-more">Read More</button>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="https://www.zicasso.com/static/e9965f8ecdbab30f9f882eeb67363e08/304cc/e9965f8ecdbab30f9f882eeb67363e08.jpg" alt="Europe" class="card-image">
+                <h3><a href="europe.html">The Ultimate Guide to Backpacking in Europe</a></h3>
+                <p>Plan your backpacking adventure across Europe's iconic cities.</p>
+                <button class="read-more">Read More</button>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card">
+                <img src="https://plus.unsplash.com/premium_photo-1676218968741-8179dd7e533f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3VtbWVyJTIwbW91bnRhaW5zfGVufDB8fDB8fHww" alt="Mountains" class="card-image">
+                <h3><a href="mountains.html">Top 5 Breathtaking Mountain Destinations</a></h3>
+                <p>Explore stunning mountain ranges and their hidden treasures.</p>
+                <button class="read-more">Read More</button>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card">
+                <img src="https://plus.unsplash.com/premium_photo-1669748157617-a3a83cc8ea23?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3VuJTIwYmVhY2h8ZW58MHx8MHx8fDA%3D" alt="Beach" class="card-image">
+                <h3><a href="beach.html">Relaxing Beaches You Must Visit</a></h3>
+                <p>Find your perfect spot for sun, sand, and relaxation.</p>
+                <button class="read-more">Read More</button>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="card">
+                <img src="https://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/ejgcq0acumqaosd7kl26" alt="Adventure" class="card-image">
+                <h3><a href="adventure.html">Adventure Activities for Thrill Seekers</a></h3>
+                <p>Get your adrenaline pumping with these thrilling activities.</p>
+                <button class="read-more">Read More</button>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="card">
+                <img src="https://366e203a.rocketcdn.me/wp-content/uploads/2021/01/Italy.jpg" alt="Culture" class="card-image">
+                <h3><a href="culture.html">Cultural Experiences to Explore Around the World</a></h3>
+                <p>Immerse yourself in diverse cultures and traditions.</p>
+                <button class="read-more">Read More</button>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="card">
+                <img src="https://webunwto.s3.eu-west-1.amazonaws.com/inline-images/animals.jpg" alt="Wildlife" class="card-image">
+                <h3><a href="wildlife.html">Top Wildlife Safaris for Nature Lovers</a></h3>
+                <p>Experience the beauty of wildlife up close and personal.</p>
+                <button class="read-more">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2024 Wander Nest. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
