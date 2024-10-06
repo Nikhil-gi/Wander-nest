@@ -155,8 +155,6 @@ section {
 }
 
 .banner-text-item {
-  /* margin: 30px 200px; */
-
   text-align: center;
   display: flex;
   flex-flow: column;
@@ -165,69 +163,32 @@ section {
   line-height: 20px;
 }
 
-.banner-heading h1 {
-  font-size: 90px;
-  font-weight: normal;
-  color: white;
-  font-family: "Balsamiq Sans";
-}
-.banner-text-item .form {
-  flex: 1;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
-  width: 130%;
-  padding: 1% 2%;
-}
-.banner-text-item input,
-.banner-text-item .date,
-.banner-text-item .book {
-  padding: 15px;
-  margin-right: 10px;
-  font-size: 18px;
-  font-family: "Roboto";
-  border-radius: 5px;
-  outline: 0;
-  border: none;
-}
-.banner-text-item input {
-  width: 50%;
-  flex: 2;
-}
-.banner-text-item .date {
-  width: 20%;
-  flex: 1;
-}
-.banner-text-item .book {
-  width: 20%;
-  flex: 1;
-}
 .banner-text-item .book {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  padding: 15px;
+  border-radius: 10px;
+  padding: 20px 30px;
   border: none;
   cursor: pointer;
   background-color: rgb(255, 94, 0);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   font-family: "Balsamiq sans";
-  width: 20%;
+  letter-spacing: 1.5px;
   transition: all 0.2s ease;
 }
 
 .banner-text-item .book:hover {
   background-color: rgb(250, 107, 24);
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
-  transition: all 0.2s ease;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
 }
 
 .banner-text-item .book:active {
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
   transform: translateY(2px);
 }
 .places {
@@ -257,10 +218,7 @@ section {
   text-align: center;
 }
 .card {
-  /* border-top-left-radius: 10px;
-  border-top-right-radius: 10px; */
   border-radius: 10px;
-
   width: 80%;
   height: auto;
   padding: 10px;
@@ -305,18 +263,22 @@ section {
 }
 
 .zoom-img {
-  position: relative;
+  /* position: relative; */
   height: 320px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .zoom-img .img-card {
-  position: absolute;
+  /* position: absolute; */
   overflow: hidden;
   border-radius: 10px;
 }
 .img-card img {
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
+  width: 480px;
 }
 .card:hover .zoom-img img {
   -webkit-transform: scale(1.1);
