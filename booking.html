@@ -82,6 +82,15 @@
     <div class="container">
         <h1>Travel Booking Form</h1>
         <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name" pattern="[a-zA-Z\s]+" title="Name should only contain letters and spaces.">
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" pattern="[0-9]{10}" title="Phone number should be 10 digits.">
+
             <label for="destination">Destination:</label>
             <input type="text" id="destination" name="destination" required placeholder="Enter your destination">
 
