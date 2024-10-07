@@ -90,6 +90,8 @@
             justify-content: center;
             align-items: center;
             color: #fff;
+            text-align: center; /* Center text for better mobile view */
+            padding: 0 20px; /* Add padding for mobile */
         }
 
         .hero h2 {
@@ -119,7 +121,6 @@
         .cards-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
             gap: 30px;
             justify-items: center;
         }
@@ -130,7 +131,7 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             overflow: hidden;
             transition: transform 0.3s ease;
-            width: 100%; /* Make cards responsive */
+            width: 100%;
         }
 
         .card:hover {
@@ -152,6 +153,16 @@
             font-size: 1.8em;
             margin: 20px 0;
             color: #fdfdfd;
+            padding: 0 10px;
+        }
+
+        .card h3 a {
+            color: #fdfdfd;
+            text-decoration: none;
+        }
+
+        .card h3 a:hover {
+            text-decoration: underline;
         }
 
         .card p {
@@ -173,6 +184,7 @@
             margin-bottom: 20px;
             text-transform: uppercase;
             font-family: 'Balsamiq Sans';
+            cursor: pointer;
         }
 
         .read-more:hover {
@@ -205,13 +217,131 @@
             font-size: 1.2em;
         }
 
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1024px) {
+            header {
+                padding: 15px 50px;
+            }
+        }
+
         @media (max-width: 768px) {
+            header {
+                padding: 15px 20px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            header nav ul {
+                flex-direction: column;
+                margin-top: 10px;
+                width: 100%;
+            }
+
+            header nav ul li {
+                margin: 10px 0;
+            }
+
+            header nav ul li a {
+                font-size: 1.1em;
+            }
+
+            .hero {
+                height: auto;
+                padding: 50px 20px;
+            }
+
+            .hero h2 {
+                font-size: 3em;
+            }
+
+            .hero p {
+                font-size: 1.3em;
+            }
+
+            .blog-posts {
+                padding: 30px 20px;
+            }
+
+            .blog-posts h2 {
+                font-size: 2em;
+            }
+
+            .cards-container {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+
+            .card h3 {
+                font-size: 1.6em;
+            }
+
+            .card p {
+                font-size: 1.1em;
+            }
+
+            .read-more {
+                font-size: 1em;
+                padding: 8px 16px;
+            }
+
+            footer p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 15px 10px;
+            }
+
+            header .left {
+                font-size: 1.5em;
+            }
+
+            header nav ul li {
+                margin: 5px 0;
+            }
+
+            header nav ul li a {
+                font-size: 1em;
+            }
+
+            .hero h2 {
+                font-size: 2.2em;
+            }
+
+            .hero p {
+                font-size: 1.1em;
+            }
+
             .cards-container {
                 grid-template-columns: 1fr;
             }
 
-            header {
-                padding: 15px;
+            .blog-posts h2 {
+                font-size: 1.8em;
+            }
+
+            .card h3 {
+                font-size: 1.4em;
+            }
+
+            .card p {
+                font-size: 1em;
+            }
+
+            .read-more {
+                font-size: 0.9em;
+                padding: 6px 12px;
+            }
+
+            footer .social a {
+                font-size: 1.5em;
+                margin: 0 10px;
+            }
+
+            footer p {
+                font-size: 0.9em;
             }
         }
     </style>
@@ -236,7 +366,7 @@
         <p>Your guide to travel tips, destinations, and more</p>
     </section>
 
-    <!-- Blog Posts (3x3 Grid) -->
+    <!-- Blog Posts -->
     <section class="blog-posts">
         <h2>Latest Posts</h2>
         <div class="cards-container">
