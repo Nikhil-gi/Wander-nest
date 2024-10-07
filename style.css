@@ -163,6 +163,49 @@ section {
   line-height: 20px;
 }
 
+.banner-heading h1 {
+  font-size: 90px;
+  font-weight: normal;
+  color: white;
+  font-family: "Balsamiq Sans";
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-text-item .form {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  width: 20%;
+  padding: 15px;
+}
+
+.banner-text-item .book {
+  padding: 15px;
+  margin-right: 10px;
+  font-size: 18px;
+  font-family: Roboto;
+  border-radius: 5px;
+  outline: 0;
+  border: none;
+}
+.banner-text-item input {
+  width: 50%;
+  flex: 2;
+}
+.banner-text-item .date {
+  width: 20%;
+  flex: 1;
+}
+.banner-text-item .book {
+  width: 20%;
+  flex: 1;
+}
+
 .banner-text-item .book {
   text-decoration: none;
   color: #fff;
