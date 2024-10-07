@@ -533,3 +533,81 @@ section {
     cursor: pointer;
   }
 }
+
+@media (max-width: 768px) {
+  .banner-heading h1 {
+    font-size: 50px;
+  }
+
+  .banner-text-item .form {
+    width: 100%;
+  }
+
+  .banner-text-item .book {
+    width: 100%;
+  }
+
+  .banner-text-item input {
+    width: 100%;
+  }
+
+  .banner-text-item .date {
+    width: 100%;
+  }
+
+  .banner-text-item .book {
+    width: 100%;
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cards .card-box {
+    flex-flow: column;
+  }
+
+  .cards .time {
+    flex: 1;
+  }
+
+  .cards .location {
+    flex: 1;
+  }
+
+  .cards .cost {
+    color: #4cafad;
+    font-size: 20px;
+  }
+
+  .about {
+    padding: 50px;
+  }
+
+  .about-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-text h2 {
+    font-size: 40px;
+  }
+
+  .about-text p {
+    width: 100%;
+  }
+
+  .about-text a {
+    width: 100%;
+  }
+
+  #about {
+    max-width: 100vw;
+    padding: 30px;
+
+    h2 {
+      max-width: 90vw;
+      text-wrap: wrap;
+    }
+  }
+}
