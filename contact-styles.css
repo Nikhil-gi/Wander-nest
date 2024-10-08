@@ -10,6 +10,8 @@ body {
     color: #fff;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header */
@@ -67,70 +69,10 @@ header nav ul li a::before {
     transition: width 0.3s;
 }
 
-/* Contact Us Section */
-.contact-us {
-    padding: 50px;
-    text-align: center;
-}
-
-.contact-us h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    font-family: 'Balsamiq Sans', sans-serif;
-    color: #fff;
-}
-
-.contact-us p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    color: #ddd;
-}
-
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 1.1em;
-}
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #222;
-    color: #fff;
-    font-size: 1.1em;
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-    color: #bbb;
-}
-
-.contact-form button {
-    background-color: rgb(255, 94, 0);
-    border: none;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    color: white;
-    transition: background-color 0.3s ease;
-    text-transform: uppercase;
-}
-
-.contact-form button:hover {
-    background-color: rgb(250, 107, 24);
-    color: #000;
-}
-
 /* Footer */
 footer {
+    display: flex;
+    flex-direction: column;
     background: rgba(0, 0, 0, 0.9);
     color: #fff;
     padding: 40px 0;
@@ -138,6 +80,7 @@ footer {
 }
 
 footer .social a {
+    justify-self: end;
     color: #fff;
     font-size: 2em;
     margin: 0 15px;
