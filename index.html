@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel-site</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,7 +46,7 @@
   <body>
     <header>
       <!-- left box logo-->
-      <div class="left"><a href="index.html"></a>Travel<span>Site</span></div>
+      <a href="index.html"><img class="logo" src="img/logo.png" /></a>
       <!--box for navbar -->
       <div class="menu-btn"></div>
       <div class="mid">
@@ -74,15 +74,12 @@
           aspernatur itaque perferendis esse.
         </p>
         <div class="banner-text-item">
-
           <div class="banner-heading">
             <h1>Find your Next tour!</h1>
           </div>
           <form class="form">
             <a href="booking.html" class="book">Book Now!</a>
           </form>
-
-
         </div>
       </div>
       <div class="social">
@@ -97,6 +94,7 @@
         ></a>
       </div>
     </section>
+
     <!--==============Places===================-->
     <div class="places">
       <div class="places-text">
@@ -217,105 +215,103 @@
           services, powered by robust technology and round-the-clock customer
           support.
         </p>
-        <label
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="check-icon"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="m4.5 12.75 6 6 9-13.5"
-            />
-          </svg>
-          24X7 Customer Support</label
-        >
-        <label
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="check-icon"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="m4.5 12.75 6 6 9-13.5"
-            />
-          </svg>
-          Trekking Tips</label
-        >
-        <label
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="check-icon"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="m4.5 12.75 6 6 9-13.5"
-            />
-          </svg>
-          Free Lunch and Dinner</label
-        >
-        <label
-          ><svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="check-icon"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="m4.5 12.75 6 6 9-13.5"
-            />
-          </svg>
-          Travel Guide</label
-        >
+        <label>
+          <i class="fa-solid fa-check check-icon"></i>
+          24X7 Customer Support
+        </label>
+        <label>
+          <i class="fa-solid fa-check check-icon"></i>
+          Trekking Tips
+        </label>
+        <label>
+          <i class="fa-solid fa-check check-icon"></i>
+          Free Lunch and Dinner
+        </label>
+        <label>
+          <i class="fa-solid fa-check check-icon"></i>
+          Travel Guide
+        </label>
         <a href="#">Go to Top &uarr;</a>
       </div>
     </div>
-    <!--footer-->
-    <footer>
-      <div class="footer">
-        <div class="row">
-          <a href="https://www.linkedin.com/in/nikhil-p-0b0bb3224/"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="https://instagram.com/nikhill.ig_/"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a href="https://twitter.com/Nikhilpndt"
-            ><i class="fab fa-twitter"></i
-          ></a>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="grid--footer">
+        <div class="logo-col">
+          <a href="index.html" class="footer-logo"
+            ><img class="logo" src="img/logo.png"
+          /></a>
+
+          <ul class="social-links">
+            <li>
+              <a href="#" class="footer-logo-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="footer-logo-link"
+                ><i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-logo-link"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; 2023 by TravelSite. All rights reserved
+          </p>
         </div>
 
-        <div class="row">
-          <ul>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Our Services</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              623 Harrison St., 2nd Floor, San Francisco, CA 94107
+            </p>
+            <p class="footer-contact-info">
+              <a href="tel:415-201-6370" class="footer-link">415-201-6370</a
+              ><br />
+              <a href="mailto:hello@omnifood.com" class="footer-link"
+                >hello@travelsuite.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <div class="nav-col">
+          <p class="footer-heading">Our services</p>
+          <ul class="footer-navigation">
+            <li><a href="#" class="footer-link">Create Account</a></li>
+            <li><a href="#" class="footer-link">Customer Support</a></li>
+            <li><a href="#" class="footer-link">Travel Guide</a></li>
+            <li><a href="#" class="footer-link">Meals</a></li>
           </ul>
         </div>
 
-        <div class="row">
-          Copyright © 2023 - All rights reserved || Designed By: Nikhil Pandit
+        <div class="nav-col">
+          <p class="footer-heading">Privacy policy</p>
+          <ul class="footer-navigation">
+            <li><a href="#" class="footer-link">Data collection</a></li>
+            <li><a href="#" class="footer-link">Data usage</a></li>
+            <li><a href="#" class="footer-link">Data sharing</a></li>
+            <li><a href="#" class="footer-link">User rights</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-col">
+          <p class="footer-heading">Terms &amp; Conditions</p>
+          <ul class="footer-navigation">
+            <li><a href="#" class="footer-link">Terms acceptance</a></li>
+            <li><a href="#" class="footer-link">Responsibilities</a></li>
+            <li><a href="#" class="footer-link">User conduct</a></li>
+          </ul>
         </div>
       </div>
+      <div class="owner">Made with &nbsp;<i class="fa-solid fa-heart owner-logo"></i>&nbsp; by Nikhil Pandit</div>
+
     </footer>
   </body>
 </html>

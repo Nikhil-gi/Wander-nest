@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us - Wander Nest</title>
-    <link rel="stylesheet" href="contact-styles.css" />
+    
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Assuming your main style.css is linked -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -20,11 +22,11 @@
     />
   </head>
   <body>
-    <!-- Header -->
-    <header>
-      <div class="left">
-        <a href="index.html">Travel<span>Site</span></a>
-      </div>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <a href="index.html"><img class="logo" src="img/logo.png" /></a>
+      
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -33,26 +35,96 @@
         </ul>
       </nav>
     </header>
-
+    
     <div
-      class="visme_d"
-      data-title="Contact Form"
-      data-url="4d6yepek-contact-form"
+    class="visme_d"
+    data-title="Contact Form"
+    data-url="4d6yepek-contact-form"
       data-domain="forms"
       data-full-page="false"
       data-min-height="500px"
       data-form-id="96782"
-    ></div>
-    <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+      ></div>
+      <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+    </div>
+      
+      
+    <!-- footer -->
 
-    <!-- Footer -->
-    <footer>
-      <div class="social">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
+    <footer class="footer">
+      <div class="grid--footer">
+        <div class="logo-col">
+          <a href="index.html" class="footer-logo"
+            ><img class="logo" src="img/logo.png"
+          /></a>
+
+          <ul class="social-links">
+            <li>
+              <a href="#" class="footer-logo-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="footer-logo-link"
+                ><i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-logo-link"><i class="fab fa-twitter"></i></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; 2023 by TravelSite. All rights reserved
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              623 Harrison St., 2nd Floor, San Francisco, CA 94107
+            </p>
+            <p class="footer-contact-info">
+              <a href="tel:415-201-6370" class="footer-link">415-201-6370</a
+              ><br />
+              <a href="mailto:hello@omnifood.com" class="footer-link"
+                >hello@travelsuite.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <div class="nav-col">
+          <p class="footer-heading">Our services</p>
+          <ul class="footer-navigation">
+            <li><a href="#" class="footer-link">Create Account</a></li>
+            <li><a href="#" class="footer-link">Customer Support</a></li>
+            <li><a href="#" class="footer-link">Travel Guide</a></li>
+            <li><a href="#" class="footer-link">Meals</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-col">
+          <p class="footer-heading">Privacy policy</p>
+          <ul class="footer-navigation">
+            <li><a href="#" class="footer-link">Data collection</a></li>
+            <li><a href="#" class="footer-link">Data usage</a></li>
+            <li><a href="#" class="footer-link">Data sharing</a></li>
+            <li><a href="#" class="footer-link">User rights</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-col">
+          <p class="footer-heading">Terms &amp; Conditions</p>
+          <ul class="footer-navigation">
+            <li><a href="#" class="footer-link">Terms acceptance</a></li>
+            <li><a href="#" class="footer-link">Responsibilities</a></li>
+            <li><a href="#" class="footer-link">User conduct</a></li>
+          </ul>
+        </div>
       </div>
-      <p>&copy; 2024 Wander Nest. All rights reserved.</p>
+      <div class="owner">Made with &nbsp;<i class="fa-solid fa-heart owner-logo"></i>&nbsp; by Nikhil Pandit</div>
     </footer>
   </body>
 </html>

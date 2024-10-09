@@ -32,6 +32,10 @@ header {
   font-family: "Balsamiq Sans";
 }
 
+.logo{
+  height: 36px;
+}
+
 header .left {
   color: white;
   font-size: 1.5em;
@@ -39,11 +43,22 @@ header .left {
   text-decoration: none;
   cursor: pointer;
 }
-header .left span {
+
+.travel {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Balsamiq Sans";
+}
+
+.site {
   color: rgb(255, 94, 0);
   font-size: 1.5em;
   font-weight: 500;
   text-decoration: none;
+  font-family: "Balsamiq Sans"
 }
 
 header .mid {
@@ -366,8 +381,7 @@ section {
 .check-icon {
   height: 24px;
   width: 24px;
-  stroke: rgb(231, 106, 34);
-  stroke-width: 5px;
+  color: rgb(231, 106, 34);
 }
 
 .about-text small {
@@ -413,45 +427,6 @@ section {
 .about-text a:hover {
   background-color: rgb(255, 255, 255);
   color: #000000;
-}
-
-.footer {
-  background: #000;
-  padding: 30px 0px;
-  font-family: "Play", sans-serif;
-  text-align: center;
-}
-
-.footer .row {
-  width: 100%;
-  margin: 1% 0%;
-  padding: 1% 0%;
-  color: gray;
-  font-size: 1.2em;
-}
-
-.footer .row a {
-  text-decoration: none;
-  color: gray;
-  transition: 0.5s;
-}
-
-.footer .row a:hover {
-  color: #fff;
-}
-
-.footer .row ul {
-  width: 100%;
-}
-
-.footer .row ul li {
-  display: inline-block;
-  margin: 0px 30px;
-}
-
-.footer .row a i {
-  font-size: 1.3em;
-  margin: 0% 1%;
 }
 
 @media (max-width: 768px) {
@@ -533,6 +508,122 @@ section {
     cursor: pointer;
   }
 }
+
+/* footer */
+.footer{
+  padding: 72px 96px 0 96px;
+  border-top: 1px solid #555353;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  background-color: #000000;
+}
+
+.footer-heading{
+  color: rgb(252, 128, 57);
+}
+
+.footer-logo-link{
+  transition: all 0.3s ease;
+}
+
+.footer-logo-link:link, .footer-logo-link:visited{
+  color:#ddd; 
+}
+
+.footer-logo-link:hover, .footer-logo-link:active{
+  color: rgb(252, 128, 57);
+}
+
+.grid--footer{
+  display:grid;
+  grid-template-columns: 1.5fr 1.5fr repeat(3, 1fr);
+  gap: 48px;
+}
+
+.footer .logo{
+  height: 40px;
+}
+
+.logo-col{
+  display:flex;
+  flex-direction: column; 
+}
+
+.footer-navigation{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+}
+
+.footer-logo{
+  display: block;
+  margin-bottom: 32px;
+}
+
+.footer-heading{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.footer-link:link,
+.footer-link:visited{
+  text-decoration: none;
+  color: #ddd;
+  transition: all 0.3s ease;
+  font-size: 12px;
+}
+
+.footer-link:hover, 
+.footer-link:active{
+  text-decoration: none;
+  color: rgb(248, 125, 54);
+}
+
+.social-links{
+  list-style: none;
+  gap: 24px;
+
+  display: flex;
+  align-items: center;
+}
+
+footer .fab{
+  font-size: 24px;
+}
+
+.copyright{
+  font-size: 14px;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}
+
+.contacts{
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.address{
+  margin-bottom: 48px;
+}
+
+.owner{
+  background-color: #000000;
+  color: #565555;
+  text-align: center;
+  padding: 72px 48px 24px 48px;
+  font-family: 'Inter', sans-serif;
+
+}
+
+.owner-logo{
+  color: rgba(231, 106, 34, 0.544);
+}
+
 
 @media (max-width: 768px) {
   .banner-heading h1 {
