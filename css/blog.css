@@ -183,7 +183,7 @@ header nav ul li a::before {
 
 .footer{
     margin-top: 128px;
-    padding: 72px 96px 0 96px;
+    padding: 64px 96px 0 96px;
     border-top: 1px solid #555353;
     font-family: 'Inter', sans-serif;
     color: #fff;
@@ -286,7 +286,7 @@ header nav ul li a::before {
     background-color: #000000;
     color: #565555;
     text-align: center;
-    padding: 96px 48px 24px 48px;
+    padding: 64px 48px 24px 48px;
     font-family: 'Inter', sans-serif;
   
   }
