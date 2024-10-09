@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wander Nest - Services</title>
+
+    <!-- CSS Styles -->
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('path/to/hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            z-index: 1;
+            max-width: 800px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .cta-button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        .cta-button:hover {
+            background-color: #ff3a25;
+            cursor: pointer;
+        }
+
+        /* Services Overview */
+        .services-overview {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .services-overview h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .services-overview p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Services List */
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 40px;
+            background-color: #f1f1f1;
+        }
+
+        .service-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            color: #ff6f61;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .learn-more {
+            text-decoration: none;
+            color: #ff6f61;
+            font-weight: bold;
+            border-bottom: 2px solid #ff6f61;
+            transition: color 0.3s ease;
+        }
+
+        .learn-more:hover {
+            color: #ff3a25;
+        }
+
+        /* Why Choose Us */
+        .why-choose-us {
+            background-color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .why-choose-us h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .why-choose-us ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .why-choose-us ul li {
+            font-size: 1.2rem;
+            color: #666;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            display: inline-block;
+            width: auto;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .testimonial {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial p {
+            font-size: 1.2rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .testimonial p:nth-child(2) {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Call to Action */
+        .cta {
+            background-color: #ff6f61;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .cta .cta-button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 1rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explore Our Exceptional Services</h1>
+            <p>Discover how we can enhance your travel experience.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services-overview">
+        <h2>What We Offer</h2>
+        <p>At Wander Nest, we provide a range of travel services tailored to meet your needs, ensuring an unforgettable
+            experience.</p>
+    </section>
+
+    <!-- Services List -->
+    <section class="services-list">
+        <div class="service-card">
+            <img src="img/servive_img1.png" alt="Customized Itineraries">
+            <h3>Customized Itineraries</h3>
+            <p>We create personalized travel itineraries to suit your preferences and interests.</p>
+            <a href="custom-itineraries.html" class="learn-more">Learn More</a>
+        </div>
+        <div class="service-card">
+            <img src="img/services_img2.png" alt="Group Tours">
+            <h3>Group Tours</h3>
+            <p>Join our guided group tours for a fun and interactive travel experience.</p>
+            <a href="group-tours.html" class="learn-more">Learn More</a>
+        </div>
+        <div class="service-card">
+            <img src="img/services_img3.png" alt="Travel Consultation">
+            <h3>Travel Consultation</h3>
+            <p>Get expert advice from our experienced travel consultants to plan your trip.</p>
+            <a href="travel-consultation.html" class="learn-more">Learn More</a>
+        </div>
+        <div class="service-card">
+            <img src="img/services_img4.png" alt="Adventure Activities">
+            <h3>Adventure Activities</h3>
+            <p>Experience thrilling adventure activities to make your trip unforgettable.</p>
+            <a href="adventure-activities.html" class="learn-more">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <h2>Why Wander Nest?</h2>
+        <ul>
+            <li>✔ Experienced guides</li>
+            <li>✔ Tailored experiences</li>
+            <li>✔ 24/7 support</li>
+            <li>✔ Customer satisfaction</li>
+        </ul>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"Wander Nest made my trip unforgettable! Highly recommend their customized services!"</p>
+            <p>- Jane Doe</p>
+        </div>
+        <div class="testimonial">
+            <p>"The group tours were incredibly fun and well-organized. I had a fantastic time!"</p>
+            <p>- John Smith</p>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <h2>Ready to Start Your Adventure?</h2>
+        <p>Get in touch with us today to begin planning your dream trip.</p>
+        <a href="#contact" class="cta-button">Contact Us</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Wander Nest. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
