@@ -511,7 +511,7 @@ section {
 
 /* footer */
 .footer{
-  padding: 64px 96px 0 96px;
+  padding: 72px 96px 0 96px;
   border-top: 1px solid #555353;
   font-family: 'Inter', sans-serif;
   color: #fff;
@@ -615,7 +615,7 @@ footer .fab{
   background-color: #000000;
   color: #565555;
   text-align: center;
-  padding: 64px 48px 24px 48px;
+  padding: 72px 48px 24px 48px;
   font-family: 'Inter', sans-serif;
 
 }
