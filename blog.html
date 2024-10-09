@@ -4,223 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wander Nest Travel Blog</title>
-    <link rel="stylesheet" href="style.css"> <!-- Assuming your main style.css is linked -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Assuming your main style.css is linked -->
+    <link rel="stylesheet" href="css/blog.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-    <style>
-        /* Global Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Balsamiq Sans', sans-serif;
-            background-color: #000;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Header */
-        header {
-            background: rgba(0, 0, 0, 0.8);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 200px;
-            font-size: 1.2em;
-            color: #fff;
-            position: sticky;
-            top: 0;
-            z-index: 999;
-        }
-
-        header .left {
-            font-size: 2em;
-            font-weight: bold;
-            cursor: pointer;
-            color: white;
-        }
-
-        header .left span {
-            color: rgb(255, 94, 0);
-        }
-
-        header nav ul {
-            display: flex;
-            list-style: none;
-        }
-
-        header nav ul li {
-            margin-left: 50px;
-        }
-
-        header nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            position: relative;
-        }
-
-        header nav ul li a:hover::before {
-            width: 100%;
-        }
-
-        header nav ul li a::before {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background: rgb(255, 94, 0);
-            bottom: -5px;
-            left: 0;
-            transition: width 0.3s;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: url('hero-image.jpg') no-repeat center center/cover;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-        }
-
-        .hero h2 {
-            font-family: 'Lilita One', sans-serif;
-            font-size: 3.5em;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 1.5em;
-            font-family: 'Balsamiq Sans';
-        }
-
-        /* Blog Section */
-        .blog-posts {
-            padding: 50px;
-            text-align: center;
-        }
-
-        .blog-posts h2 {
-            font-size: 2.5em;
-            margin-bottom: 30px;
-            color: #fff;
-            font-family: 'Lilita One', sans-serif;
-        }
-
-        .cards-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            gap: 30px;
-            justify-items: center;
-        }
-
-        .card {
-            background-color: #222;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            overflow: hidden;
-            transition: transform 0.3s ease;
-            width: 100%; /* Make cards responsive */
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-        }
-
-        .card-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover .card-image {
-            transform: scale(1.1);
-        }
-
-        .card h3 {
-            font-size: 1.8em;
-            margin: 20px 0;
-            color: #fdfdfd;
-        }
-
-        .card p {
-            font-size: 1.2em;
-            color: #ddd;
-            margin-bottom: 20px;
-            padding: 0 10px;
-        }
-
-        /* Button Styles */
-        .read-more {
-            background-color: rgb(255, 94, 0);
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            font-size: 1.2em;
-            transition: background-color 0.3s ease;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            font-family: 'Balsamiq Sans';
-        }
-
-        .read-more:hover {
-            background-color: rgb(250, 250, 0);
-            color: #000;
-        }
-
-        /* Footer */
-        footer {
-            background: rgba(0, 0, 0, 0.9);
-            color: #fff;
-            padding: 40px 0;
-            text-align: center;
-            font-family: 'Balsamiq Sans';
-        }
-
-        footer .social a {
-            color: #fff;
-            font-size: 2em;
-            margin: 0 15px;
-            transition: color 0.3s ease;
-        }
-
-        footer .social a:hover {
-            color: rgb(255, 94, 0);
-        }
-
-        footer p {
-            margin-top: 20px;
-            font-size: 1.2em;
-        }
-
-        @media (max-width: 768px) {
-            .cards-container {
-                grid-template-columns: 1fr;
-            }
-
-            header {
-                padding: 15px;
-            }
-        }
-    </style>
 </head>
 <body>
 
     <!-- Header -->
     <header>
-        <div class="left"><a href="index.html">Travel<span>Site</span></a></div>
+        <a href="index.html"><img class="logo" src="img/logo.png" /></a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -315,14 +112,81 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="social">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+    <footer class="footer">
+        <div class="container grid grid--footer">
+          <div class="logo-col">
+            <a href="index.html" class="footer-logo"
+              ><img class="logo" src="img/logo.png"
+            /></a>
+  
+            <ul class="social-links">
+              <li>
+                <a href="#" class="footer-logo-link"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="footer-logo-link"
+                  ><i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-logo-link"><i class="fab fa-twitter"></i></a>
+              </li>
+            </ul>
+  
+            <p class="copyright">
+              Copyright &copy; 2023 by TravelSite. All rights reserved
+            </p>
+          </div>
+  
+          <div class="address-col">
+            <p class="footer-heading">Contact us</p>
+            <address class="contacts">
+              <p class="address">
+                623 Harrison St., 2nd Floor, San Francisco, CA 94107
+              </p>
+              <p class="footer-contact-info">
+                <a href="tel:415-201-6370" class="footer-link">415-201-6370</a
+                ><br />
+                <a href="mailto:hello@omnifood.com" class="footer-link"
+                  >hello@travelsuite.com</a
+                >
+              </p>
+            </address>
+          </div>
+  
+          <div class="nav-col">
+            <p class="footer-heading">Our services</p>
+            <ul class="footer-navigation">
+              <li><a href="#" class="footer-link">Create Account</a></li>
+              <li><a href="#" class="footer-link">Customer Support</a></li>
+              <li><a href="#" class="footer-link">Travel Guide</a></li>
+              <li><a href="#" class="footer-link">Meals</a></li>
+            </ul>
+          </div>
+  
+          <div class="nav-col">
+            <p class="footer-heading">Privacy policy</p>
+            <ul class="footer-navigation">
+              <li><a href="#" class="footer-link">Data collection</a></li>
+              <li><a href="#" class="footer-link">Data usage</a></li>
+              <li><a href="#" class="footer-link">Data sharing</a></li>
+              <li><a href="#" class="footer-link">User rights</a></li>
+            </ul>
+          </div>
+  
+          <div class="nav-col">
+            <p class="footer-heading">Terms &amp; Conditions</p>
+            <ul class="footer-navigation">
+              <li><a href="#" class="footer-link">Terms acceptance</a></li>
+              <li><a href="#" class="footer-link">Responsibilities</a></li>
+              <li><a href="#" class="footer-link">User conduct</a></li>
+            </ul>
+          </div>
         </div>
-        <p>&copy; 2024 Wander Nest. All rights reserved.</p>
-    </footer>
+        <div class="owner">Made with &nbsp;<i class="fa-solid fa-heart owner-logo"></i>&nbsp; by Nikhil Pandit</div>
+      </footer>
 
 </body>
 </html>

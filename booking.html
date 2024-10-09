@@ -4,79 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Booking Form - Dark Theme</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #121212;
-            color: #e0e0e0;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #1e1e1e;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: rgb(255, 94, 0);
-            margin-bottom: 30px;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-        form {
-            display: grid;
-            gap: 20px;
-        }
-        label {
-            font-weight: bold;
-            margin-bottom: 5px;
-            display: block;
-            color: white;
-        }
-        input, select {
-            width: 100%;
-            padding: 12px;
-            border: none;
-            border-radius: 4px;
-            box-sizing: border-box;
-            background-color: #2c2c2c;
-            color: #e0e0e0;
-            transition: all 0.3s ease;
-        }
-        input:focus, select:focus {
-            outline: none;
-            box-shadow: 0 0 0 2px rgb(255, 94, 0);
-        }
-        input[type="submit"] {
-            background-color: rgb(255, 94, 0);
-            color: #000;
-            border: none;
-            cursor: pointer;
-            padding: 12px;
-            font-size: 16px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-        }
-        input[type="submit"]:hover {
-            background-color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(3, 218, 198, 0.3);
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .container {
-            animation: fadeIn 0.5s ease-out;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/booking.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
 </head>
 <body>
     <div class="container">
@@ -112,5 +67,83 @@
             <input type="submit" value="Book Your Adventure">
         </form>
     </div>
+    
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="grid--footer">
+          <div class="logo-col">
+            <a href="index.html" class="footer-logo"
+              ><img class="logo" src="img/logo.png"
+            /></a>
+  
+            <ul class="social-links">
+              <li>
+                <a href="#" class="footer-logo-link"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="footer-logo-link"
+                  ><i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer-logo-link"><i class="fab fa-twitter"></i></a>
+              </li>
+            </ul>
+  
+            <p class="copyright">
+              Copyright &copy; 2023 by TravelSite. All rights reserved
+            </p>
+          </div>
+  
+          <div class="address-col">
+            <p class="footer-heading">Contact us</p>
+            <address class="contacts">
+              <p class="address">
+                623 Harrison St., 2nd Floor, San Francisco, CA 94107
+              </p>
+              <p class="footer-contact-info">
+                <a href="tel:415-201-6370" class="footer-link">415-201-6370</a
+                ><br />
+                <a href="mailto:hello@omnifood.com" class="footer-link"
+                  >hello@travelsuite.com</a
+                >
+              </p>
+            </address>
+          </div>
+  
+          <div class="nav-col">
+            <p class="footer-heading">Our services</p>
+            <ul class="footer-navigation">
+              <li><a href="#" class="footer-link">Create Account</a></li>
+              <li><a href="#" class="footer-link">Customer Support</a></li>
+              <li><a href="#" class="footer-link">Travel Guide</a></li>
+              <li><a href="#" class="footer-link">Meals</a></li>
+            </ul>
+          </div>
+  
+          <div class="nav-col">
+            <p class="footer-heading">Privacy policy</p>
+            <ul class="footer-navigation">
+              <li><a href="#" class="footer-link">Data collection</a></li>
+              <li><a href="#" class="footer-link">Data usage</a></li>
+              <li><a href="#" class="footer-link">Data sharing</a></li>
+              <li><a href="#" class="footer-link">User rights</a></li>
+            </ul>
+          </div>
+  
+          <div class="nav-col">
+            <p class="footer-heading">Terms &amp; Conditions</p>
+            <ul class="footer-navigation">
+              <li><a href="#" class="footer-link">Terms acceptance</a></li>
+              <li><a href="#" class="footer-link">Responsibilities</a></li>
+              <li><a href="#" class="footer-link">User conduct</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="owner">Made with &nbsp;<i class="fa-solid fa-heart owner-logo"></i>&nbsp; by Nikhil Pandit</div>
+      </footer>
 </body>
 </html>

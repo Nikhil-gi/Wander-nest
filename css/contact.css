@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 body {
+    background-color: #000;
+}
+
+.container{
     font-family: 'Balsamiq Sans', sans-serif;
     background-color: #000;
     color: #fff;
@@ -12,6 +16,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 /* Header */
@@ -69,32 +74,11 @@ header nav ul li a::before {
     transition: width 0.3s;
 }
 
-/* Footer */
-footer {
-    display: flex;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
-    color: #fff;
-    padding: 40px 0;
-    text-align: center;
+.footer{
+    margin-top: 128px;
 }
 
-footer .social a {
-    justify-self: end;
-    color: #fff;
-    font-size: 2em;
-    margin: 0 15px;
-    transition: color 0.3s ease;
-}
 
-footer .social a:hover {
-    color: rgb(255, 94, 0);
-}
-
-footer p {
-    margin-top: 20px;
-    font-size: 1.2em;
-}
 
 /* Media Queries */
 @media (max-width: 768px) {
