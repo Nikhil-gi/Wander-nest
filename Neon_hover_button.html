@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Button Hover Effect</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #1e1e1e;
+    }
+    .button {
+      padding: 14px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      background-color: transparent;
+      border: 2px solid #00f0ff;
+      border-radius: 10px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+      z-index: 1;
+      transition: color 0.3s ease, box-shadow 0.4s ease, transform 0.2s ease;
+      margin: 10px;
+      box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+    }
+    .button:hover {
+      color: #00f0ff;
+      box-shadow: 0 0 15px #00f0ff, 0 0 30px #00f0ff, 0 0 45px #00f0ff;
+      transform: translateY(-5px);
+    }
+    .button:focus {
+      outline: none;
+      box-shadow: 0 0 15px #00f0ff, 0 0 30px #00f0ff, 0 0 45px #00f0ff;
+    }
+    .button-secondary {
+      border-color: #ff00c8; 
+      box-shadow: 0 0 20px rgba(255, 0, 200, 0.5);
+    }
+
+    .button-secondary:hover {
+      color: #ff00c8;
+      box-shadow: 0 0 15px #ff00c8, 0 0 30px #ff00c8, 0 0 45px #ff00c8;
+    }
+
+  </style>
+</head>
+<body>
+  <button class="button">Book Now</button>
+  <button class="button button-secondary">Learn More</button>
+</body>
+</html>
