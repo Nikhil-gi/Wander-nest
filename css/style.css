@@ -15,6 +15,7 @@ Cost: #4cafad
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #000000;
 }
 
 header {
@@ -141,7 +142,7 @@ section {
   line-height: 28px;
   text-align: center;
   font-size: 22px;
-  max-width: 600px;
+  width: 650px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -149,7 +150,7 @@ section {
 .home .social {
   z-index: 888;
   position: fixed;
-  right: 30px;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
   transition: 0.5s ease;
@@ -357,25 +358,30 @@ section {
 
 .about {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: nowrap;
+  flex-direction:row;
   align-items: center;
   justify-content: center;
-  padding: 150px;
   background-color: black;
+  width: 99vw;
+  height: 93vh;
 }
 .about-img {
-  flex: 1;
+  width: 35vw;
+  height: 93vh;
 }
 .about-img img {
-  width: 500px;
-  height: 700px;
+  width: 35vw;
+  height: 93vh;
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
   border-radius: 50px;
 }
 .about-text {
-  flex: 1;
+  width: 55vw;
   display: flex;
-  flex-flow: column wrap;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 2vw;
 }
 
 .check-icon {
@@ -386,21 +392,24 @@ section {
 
 .about-text small {
   color: rgb(231, 106, 34);
-  font-size: 30px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 1vh;
 }
 .about-text h2 {
   flex: 1;
   font-family: Barlow Condensed;
-  font-size: 60px;
+  font-size: 45px;
   color: #ffffff;
-  width: 700px;
+  text-align: center;
 }
 .about-text label {
   padding-bottom: 10px;
   color: #ffffff;
   font-family: "Inter", "Balsamiq Sans";
   letter-spacing: 1.2px;
-  font-size: 18px;
+  font-size: 16px;
+  margin-left: 2.5vw;
 }
 .about-text p {
   width: 900px;
@@ -409,25 +418,12 @@ section {
   padding: 50px 0;
   font-family: "Inter", "Balsamiq Sans";
   letter-spacing: 1.2px;
-  font-size: 22px;
+  font-size: 16px;
+  width: 50vw;
+  text-align: justify;
+  margin-left: 2.5vw;
 }
-.about-text a {
-  background-color: #f45505;
-  border: 2px solid black;
-  text-decoration: none;
-  border-radius: 8px;
-  width: 140px;
-  padding: 20px;
-  text-align: center;
-  margin-top: 50px;
-  color: #ffffff;
-  font-size: 18px;
-  font-family: "Balsamiq Sans";
-}
-.about-text a:hover {
-  background-color: rgb(255, 255, 255);
-  color: #000000;
-}
+
 
 @media (max-width: 768px) {
   header {
@@ -701,4 +697,27 @@ footer .fab{
       text-wrap: wrap;
     }
   }
+}
+
+.go-to-top {
+  position: fixed; 
+  bottom: 50px;    
+  right: 20px;    
+  background-color: #f45505;
+  border: 2px solid black;
+  text-decoration: none;
+  border-radius: 8px;
+  width: 140px;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Balsamiq Sans";
+  z-index: 1000; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.go-to-top:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
