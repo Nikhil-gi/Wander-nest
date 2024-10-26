@@ -15,7 +15,11 @@ Cost: #4cafad
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+<<<<<<< HEAD
   /* background-color: #000000; */
+=======
+/*   background-color: #000000; */
+>>>>>>> 5a5dad536d29f75e61fd1ff4b990b9947e127f7b
 }
 
 header {
