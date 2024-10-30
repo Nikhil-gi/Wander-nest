@@ -1,0 +1,106 @@
+<section id="faq" class="faq-section">
+    <h2>Frequently Asked Questions (FAQ)</h2>
+    <p>Your questions about WanderNest, answered here! Find information on how to plan, book, and make the most of your travel experience with us.</p>
+
+    <!-- FAQ Container -->
+    <div class="faq-container">
+
+        <!-- FAQ Item 1 -->
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(1)">What is WanderNest? <span>+</span></button>
+            <div id="faq-answer-1" class="faq-answer">
+                <p>WanderNest is a travel platform that helps you explore top destinations, create custom itineraries, and book flights, hotels, and vacation packages with ease. We aim to make travel planning simple and inspiring.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(2)">How do I book a trip on WanderNest? <span>+</span></button>
+            <div id="faq-answer-2" class="faq-answer">
+                <p>Booking a trip on WanderNest is easy! Simply explore our 'Book Trips' section, compare prices for flights and hotels, and proceed with the booking through our trusted providers.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(3)">Can I customize my travel itinerary? <span>+</span></button>
+            <div id="faq-answer-3" class="faq-answer">
+                <p>Yes! WanderNest offers customizable travel itineraries, allowing you to add and organize activities based on your preferences, travel style, and interests.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(4)">What kind of travel deals does WanderNest offer? <span>+</span></button>
+            <div id="faq-answer-4" class="faq-answer">
+                <p>We offer exclusive deals and discounts on flights, hotels, and vacation packages to help you save on your travels. Check the 'Travel Deals' section to access our latest offers.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(5)">How can I contribute to WanderNest during Hacktoberfest 2024? <span>+</span></button>
+            <div id="faq-answer-5" class="faq-answer">
+                <p>To contribute, fork our repository, make your changes, and submit a pull request. Be sure to follow our contribution guidelines to ensure your PR aligns with our standards. We welcome contributions from all levels of experience!</p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="faq-item">
+            <button class="faq-question" onclick="toggleAnswer(6)">What technologies are used to build WanderNest? <span>+</span></button>
+            <div id="faq-answer-6" class="faq-answer">
+                <p>WanderNest is built using HTML, CSS, and JavaScript to create a user-friendly, dynamic, and visually appealing platform for travelers worldwide.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Add CSS for FAQ Section Styling -->
+<style>
+    .faq-section {
+        margin: 50px;
+        padding: 20px;
+    }
+    .faq-section h2 {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .faq-container {
+        max-width: 800px;
+        margin: auto;
+    }
+    .faq-item {
+        margin-bottom: 15px;
+    }
+    .faq-question {
+        background-color: #0078d4;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 15px;
+        width: 100%;
+        font-size: 16px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .faq-answer {
+        display: none;
+        background-color: #f4f4f4;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-top: 5px;
+        font-size: 15px;
+    }
+</style>
+
+<!-- Add JavaScript for FAQ Toggle Functionality -->
+<script>
+    function toggleAnswer(id) {
+        const answer = document.getElementById(`faq-answer-${id}`);
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
