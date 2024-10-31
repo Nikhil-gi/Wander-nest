@@ -1,8 +1,9 @@
-#✈️ WanderNest ✈️
+<h1>✈️ WanderNest ✈️</h1>
 
-*“Travel far enough, you meet yourself.”* – David Mitchell
+#### *“Travel far enough, you meet yourself.”* – David Mitchell
 
 Welcome to **WanderNest**, your gateway to exploring the world’s most exciting destinations 🌍. Whether you're planning a relaxing vacation or an adventurous getaway, **WanderNest** helps you find, plan, and book trips with ease, ensuring you have the best experiences on your journey.
+
 
 **About WanderNest 🌏**
 
@@ -69,20 +70,19 @@ To run **WanderNest** locally, follow these steps:
 1. **Clone the Repository**
 
 bash
-
-Copy code
-
+```
 git clone https://github.com/yourusername/Wander-nest.git
-
+```
+```
 cd Wander-nest
-
+```
 1. **Open the Project**
 
-Locate the index.html file and open it in your preferred web browser.
+Locate the `index.html` file and open it in your preferred web browser.
 
 1. **Run the Project**
 
-Simply open index.html in your browser to start exploring **WanderNest**!
+Simply open `index.html` in your browser to start exploring **WanderNest**!
 
 **Get Involved ✨**
 
@@ -111,7 +111,7 @@ Let **WanderNest** be your go-to travel companion for discovering the world.
 
 We’d love to hear from you! If you have questions, ideas, or want to collaborate, feel free to reach out.
 
-🌐 **Visit our website**: wander-nest.netlify.app
-📧 **Contact us**: Reach out via our website for inquiries and support.
-📱 **Follow us on social media** for the latest updates, travel tips, and deals.
+- 🌐 **Visit our website**: [WanderNest](wander-nest.netlify.app)
+- 📧 **Contact us**: Reach out via our website for inquiries and support.
+- 📱 **Follow us on social media** for the latest updates, travel tips, and deals.
 
